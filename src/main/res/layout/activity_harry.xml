@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hp1"
+    tools:context=".Harry">
+
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is Harry's favorite spell?"
+        android:textColor="#ED4B18"
+        android:textSize="70px"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="400px"/>
+
+    <Button
+        android:id="@+id/wrongharry1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accio"
+        android:layout_marginTop="400px"
+        android:textSize="60px"
+        android:textColor="#FBE731"
+        app:layout_constraintTop_toBottomOf="@+id/question1"
+        tools:layout_editor_absoluteX="-6dp" />
+
+    <Button
+        android:id="@+id/wrongharry2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expecto Patronum"
+        android:layout_marginTop="20px"
+        android:textSize="60px"
+        android:textColor="#FBE731"
+        app:layout_constraintTop_toBottomOf="@+id/wrongharry1"
+        tools:layout_editor_absoluteX="-5dp" />
+
+    <Button
+        android:id="@+id/wrongharry3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lumos"
+        android:layout_marginTop="20px"
+        android:textSize="60px"
+        android:textColor="#FBE731"
+        app:layout_constraintTop_toBottomOf="@+id/wrongharry2"
+        tools:layout_editor_absoluteX="-6dp" />
+
+    <Button
+        android:id="@+id/rightharry1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expelliarmus"
+        android:layout_marginTop="20px"
+        android:textSize="60px"
+        android:textColor="#FBE731"
+        app:layout_constraintTop_toBottomOf="@+id/wrongharry3"
+        tools:layout_editor_absoluteX="-5dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
